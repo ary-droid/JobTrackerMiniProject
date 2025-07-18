@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+      <h1>Job Application Table</h1>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Date Applied</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="job-application-table-body">
+            <tr>
+              <td>Google</td>
+              <td>Software Engineer</td>
+              <td>2021-01-01</td>
+              <td>Applied</td>
+              <td>Notes</td>
+            </tr>
+            <tr>
+              <td>Facebook</td>
+              <td>Product Manager</td>
+              <td>2021-01-02</td>
+              <td>Interviewed</td>
+              <td>Notes</td>
+            </tr>
+            <tr>
+              <td>Amazon</td>
+              <td>Business Analyst</td>
+              <td>2021-01-03</td>
+              <td>Rejected</td>
+              <td>Notes</td>
+            </tr>
+            <tr>
+              <td>Microsoft</td>
+              <td>Software Engineer</td>
+              <td>2021-01-04</td>
+              <td>Offered</td>
+              <td>Notes</td>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>Product Manager</td>
+              <td>2021-01-05</td>
+              <td>Accepted</td>
+              <td>Notes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h1>Job Application Form</h1>
+        <form id="job-application-form">
+          <label for="company">Company:</label>
+          <input type="text" name="company" id="company" />
+          <br />
+          <label for="position">Position:</label>
+          <input type="text" name="position" id="position" />
+          <br />
+          <label for="date">Date Applied:</label>
+          <input type="date" name="date" id="date" />
+          <br />
+          <label for="status">Status:</label>
+          <select name="status" id="status">
+            <option value="applied">Applied</option>
+            <option value="interviewed">Interviewed</option>
+            <option value="rejected">Rejected</option>
+            <option value="offered">Offered</option>
+            <option value="accepted">Accepted</option>
+          </select>
+          <br />
+          <label for="notes">Notes:</label>
+          <textarea name="notes" id="notes"></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <script src="backend.js"></script>
+  
+</body>
+</html>
